@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Adhitya PPT 2172024">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #input {
+        border-radius: 100%;
+        background-color:cornflowerblue;
+        color: black;
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        float: left;
+    }
+    #seluruh {
+        display: flex;
+    }
+</style>
+<body>
+    <div>
+    <script>
+        function BolaAngka() {
+            let angka = prompt("Berapa NxN bola yang ingin dibuat?");
+        let k = angka*angka
+        
+        for (let i=angka;i>0;i--) {
+            document.write("<div id='seluruh'>")
+            for(let j=angka;j>0;j--) {
+                
+                document.write("<div id='input'>" + k + "</div>")
+                k--
+            }
+            document.write("</div>")
+        }
+        }
+        BolaAngka()
+    </script>
+    </div>
+</body>
+</html>
